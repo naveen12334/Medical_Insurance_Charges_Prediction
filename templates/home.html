@@ -1,0 +1,118 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Medical Insurance Charges Prediction</title>
+      <meta charset="utf-8">
+      
+      <!-- BootStrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+      <!-- css -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Style.css')}}">
+
+      <style>
+          body{
+              background-image:url('https://www.autoritedelaconcurrence.fr/sites/default/files/2021-02/stethoscope2.jpg');
+            background-repeat: no-repeat;
+          background-attachment: fixed;
+        background-size: cover; }
+      </style>
+
+    </head>
+
+    <body>
+
+      <h1>
+        <div style ="text-align:center">
+          <font color='black'>
+            MEDICAL INSURANCE CHARGES PREDICTION
+          </font>
+        </div>
+      </h1>
+      <br>
+
+
+     <div class="wrapper">
+       <div class="container my-1">
+        <form action="\predict" method="post">
+         <div class="row">
+           <div class="col-md-5 col-sm-3 mx-auto">
+             <form class="" action="/predict" method="post">
+
+	               <div class="form-group">
+                 <label for="age" class="ph-area">Enter The Age</label>  
+                 <input type="text" name="age" id="age" class="form-control" required>
+                 <div class="form-group">
+                  <label for="bmi" class="ph-area">Enter BMI</label>
+                  <input type="text" name="bmi" id="bmi" class="form-control" required>
+                  
+                </div>
+                 
+
+
+               <div class="form-group">
+                 <select class="form-control" name="region" required="required">
+                   <option value="" selected>Enter The Region</option>
+                   <option value="3">South-West</option>
+                   <option value="2">South-East</option>
+                   <option value="1">North-West</option>
+                   <option value="0">North-East</option>
+                 </select>
+               </div>
+		   
+
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="sex" required="required">
+               </div>
+                   <option value="" selected>Enter The Gender</option>
+                   <option value="0">Female</option>
+                   <option value="1">Male</option>
+                 </select>
+                 </select>
+               </div>
+
+              <div class="form-group">
+                 <label for="children" class="ph-area">Enter Number OF Childrens</label>
+                 <input type="text" name="children" id="children" class="form-control" required>
+                 
+               </div>
+
+
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="smoker" required="required">
+                   <option value="" selected>Smoker or Not?</option>
+                   <option value="0">No</option>
+                   <option value="1">Yes</option>
+                 </select>
+               </div>
+
+             <div class="form-group">
+               <input type="submit" class="btn btn-secondary" value="Predict">
+               
+             </div>
+           </form>
+           <br>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+        
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+
+  </html>
