@@ -35,7 +35,7 @@ def predict():
         ]])
     output=round(prediction[0],2)
 
-    return render_template('home.html',prediction_text="Predicted Insurance Charges is ${}".format(output))
+    return render_template('home.html',prediction_text="Predicted Insurance Charges Is ${}".format(output))
 
 
     return render_template("home.html")
