@@ -44,7 +44,7 @@ As per selected trained model is dumped to pickled format for app development
 ![](https://github.com/naveen12334/Medical_insurance_charges_prediction/blob/main/Images/SQL_Predicted_Charges.PNG)
 
 # PowerBI Report:
-![](https://github.com/naveen12334/Medical_insurance_charges_prediction/blob/main/Images/PowerBI_Report.PNG)
+![](https://github.com/naveen12334/Medical_insurance_charges_prediction/blob/main/Images/Power%20Bi%20Report.PNG)
 
 # Deployed:
 Deployed on AWS -- http://medicalinsurancepred-env.eba-mgukfuav.us-west-2.elasticbeanstalk.com/
