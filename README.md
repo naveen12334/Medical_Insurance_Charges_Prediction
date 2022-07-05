@@ -8,7 +8,7 @@ Predicting sales of unique products which belongs to different stores with their
 ![](https://github.com/naveen12334/Medical_insurance_charges_prediction/blob/main/Images/Prediction.PNG)
 
 # PROBLEM STATEMENT:
-Nowadays, shopping malls and Big Marts keep track of individual item sales data in order to forecast future client demand and adjust inventory management. In a data warehouse, these data stores hold a significant amount of consumer information and particular item details. By mining the data store from the data warehouse, more anomalies and common patterns can be discovered.
+The goal of this project is to allows a person to get an idea about the necessary amount required according to their own health status. Later they can comply with any health insurance company and their schemes & benefits keeping in mind the predicted amount from our project. This can help a person in focusing more on the health aspect of an insurance rather than the futile part
 
 # Goal:
 the goal is to predict the insurance charges of the Customers of Healthcare Service according to the provided dataset based on the age,gender,bmi etc.
@@ -17,11 +17,12 @@ the goal is to predict the insurance charges of the Customers of Healthcare Serv
 The classical machine learning tasks like Data Exploration, Data Cleaning,Feature Engineering, Model Building and Model Testing. Try out different machine learning algorithms that’s best fit for the above case.
 
 # Project Various Steps:
-# Data Transformation and Extraction:
-Data is transformed into SQL Server from csv files and extract in python notebook from SQL Server through making a connection with pyodbc library.
 
 # Data Source (SQL VM):
 ![](https://github.com/naveen12334/Medical_insurance_charges_prediction/blob/main/Images/SQL_charges.PNG)
+
+# Data Transformation and Extraction:
+Data is transformed into SQL Server from csv files and extract in python notebook from SQL Server through making a connection with pyodbc library.
 
 # Data Exploration:
 I started exploring datasets using pandas, NumPy,matplotlib and seaborn.
